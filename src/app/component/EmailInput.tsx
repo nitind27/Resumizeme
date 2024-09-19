@@ -20,7 +20,7 @@ const EmailInput = ({ value, label }: FloatingLabelInputProps) => {
     } else {
       setIsValidEmail(null);
     }
-  }, [value]);
+  }, [value, emailRegex]);  // Add emailRegex here
 
   return (
     <div className="relative w-[308px] max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl flex items-center">
