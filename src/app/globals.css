@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --primary-color: #008B5D; /* Example green color */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --primary-color: #008B5D; 
+  }
+}
+
+body {
+  font-family: 'Gilroy-SemiBold', sans-serif; /* Set the font family for body */
+  color: var(--foreground);
+ 
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .font-gilroy {
+    font-family: 'Gilroy-SemiBold'; /* Utility class for Gilroy-SemiBold */
+  }
+}
+
+.bg-primary {
+  background-color: var(--primary-color);
+}
+
+.text-primary {
+  color: var(--primary-color);
+}
